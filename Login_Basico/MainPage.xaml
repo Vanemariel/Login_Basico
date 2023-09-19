@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Login_Basico.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="Black" Padding="24" CornerRadius="0" BorderColor="White">
+            <Label Text="Login!" HorizontalTextAlignment="Center" TextColor="White" FontSize="38"/>
+        </Frame>
+
+        <Frame Margin="18"
+               BorderColor="Black"
+               CornerRadius="150"
+               HeightRequest="100"
+               WidthRequest="100"
+               IsClippedToBounds="True"
+               HorizontalOptions="Center"
+               VerticalOptions="Center">
+            <Image Source="iconologin.png"
+                    BackgroundColor="#fff"
+                    Aspect="AspectFill"
+                    Margin="-8"
+                    HeightRequest="100"
+                    WidthRequest="100" />
+        </Frame>
+
+        <Entry Placeholder="Usuario" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" Margin="20" x:Name="txtUsuario"/>
+        <Entry Placeholder="Pasword" IsPassword="True" TextColor="Black" FontSize="25" HorizontalTextAlignment="Center" Margin="20" x:Name="txtPasword"/>
+
+        <StackLayout Orientation="Vertical" HeightRequest="120" BackgroundColor="#f5f6fa" Padding="10" Margin="20">
+
+            <StackLayout Spacing="0" BackgroundColor="#f5f6fa" Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+                <ImageButton BackgroundColor="#f5f6fa" Source="aceptar.png" HeightRequest="100" WidthRequest="100" x:Name="btbOk"/>
+                <ImageButton BackgroundColor="#f5f6fa" Source="no.png" HeightRequest="100" WidthRequest="100" x:Name="btbNo"/>
+                
+
+            </StackLayout>
+        </StackLayout>
+        
+        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
