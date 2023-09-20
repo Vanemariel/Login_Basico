@@ -30,7 +30,7 @@
         <StackLayout Orientation="Vertical" HeightRequest="120" BackgroundColor="#f5f6fa" Padding="10" Margin="20">
 
             <StackLayout Spacing="0" BackgroundColor="#f5f6fa" Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
-                <ImageButton BackgroundColor="#f5f6fa" Source="aceptar.png" HeightRequest="100" WidthRequest="100" x:Name="btbOk"/>
+                <ImageButton BackgroundColor="#f5f6fa" Source="aceptar.png" HeightRequest="100" WidthRequest="100" x:Name="btbOk" Clicked="btbOk_Clicked"/>
                 <ImageButton BackgroundColor="#f5f6fa" Source="no.png" HeightRequest="100" WidthRequest="100" x:Name="btbNo"/>
                 
 
